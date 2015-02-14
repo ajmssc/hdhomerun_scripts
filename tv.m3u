@@ -1,0 +1,154 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="I702.28458070.microsoft.com" tvg-logo="KTVUDT.png" tvg-name="702 KTVUDT" group-title="Comcast Cable",KTVUDT (702 KTVUDT)
+http://192.168.1.100:5004/auto/v702
+#EXTINF:-1 tvg-id="I703.28459991.microsoft.com" tvg-logo="KNTVDT.png" tvg-name="703 KNTVDT" group-title="Comcast Cable",KNTVDT (703 KNTVDT)
+http://192.168.1.100:5004/auto/v703
+#EXTINF:-1 tvg-id="I704.29228906.microsoft.com" tvg-logo="KRONDT.png" tvg-name="704 KRONDT" group-title="Comcast Cable",KRONDT (704 KRONDT)
+http://192.168.1.100:5004/auto/v704
+#EXTINF:-1 tvg-id="I705.28456657.microsoft.com" tvg-logo="KPIXDT.png" tvg-name="705 KPIXDT" group-title="Comcast Cable",KPIXDT (705 KPIXDT)
+http://192.168.1.100:5004/auto/v705
+#EXTINF:-1 tvg-id="I706.41113432.microsoft.com" tvg-logo="KICUDT.png" tvg-name="706 KICUDT" group-title="Comcast Cable",KICUDT (706 KICUDT)
+http://192.168.1.100:5004/auto/v706
+#EXTINF:-1 tvg-id="I707.28455309.microsoft.com" tvg-logo="KGODT.png" tvg-name="707 KGODT" group-title="Comcast Cable",KGODT (707 KGODT)
+http://192.168.1.100:5004/auto/v707
+#EXTINF:-1 tvg-id="I709.28456989.microsoft.com" tvg-logo="KQEDDT.png" tvg-name="709 KQEDDT" group-title="Comcast Cable",KQEDDT (709 KQEDDT)
+http://192.168.1.100:5004/auto/v709
+#EXTINF:-1 tvg-id="I710.188190483.microsoft.com" tvg-logo="KQEHDT.png" tvg-name="710 KQEHDT" group-title="Comcast Cable",KQEHDT (710 KQEHDT)
+http://192.168.1.100:5004/auto/v710
+#EXTINF:-1 tvg-id="I711.182834730.microsoft.com" tvg-logo="KKPXDT.png" tvg-name="711 KKPXDT" group-title="Comcast Cable",KKPXDT (711 KKPXDT)
+http://192.168.1.100:5004/auto/v711
+#EXTINF:-1 tvg-id="I712.42098125.microsoft.com" tvg-logo="KBCWDT.png" tvg-name="712 KBCWDT" group-title="Comcast Cable",KBCWDT (712 KBCWDT)
+http://192.168.1.100:5004/auto/v712
+#EXTINF:-1 tvg-id="I713.38562403.microsoft.com" tvg-logo="KOFYDT.png" tvg-name="713 KOFYDT" group-title="Comcast Cable",KOFYDT (713 KOFYDT)
+http://192.168.1.100:5004/auto/v713
+#EXTINF:-1 tvg-id="I715.41133538.microsoft.com" tvg-logo="KGODT2.png" tvg-name="715 KGODT2" group-title="Comcast Cable",KGODT2 (715 KGODT2)
+http://192.168.1.100:5004/auto/v715
+#EXTINF:-1 tvg-id="I717.40121967.microsoft.com" tvg-logo="KCSMDT.png" tvg-name="717 KCSMDT" group-title="Comcast Cable",KCSMDT (717 KCSMDT)
+http://192.168.1.100:5004/auto/v717
+#EXTINF:-1 tvg-id="I720.216362439.microsoft.com" tvg-logo="CSNBD.png" tvg-name="720 CSNBD" group-title="Comcast Cable",Comcast SportsNet Bay Area HD (720 CSNBD)
+http://192.168.1.100:5004/auto/v720
+#EXTINF:-1 tvg-id="I721.225921950.microsoft.com" tvg-logo="CSNCD2A.png" tvg-name="721 CSNCD2A" group-title="Comcast Cable",Comcast SportsNet California No Kings 24 (721 CSNCD2A)
+http://192.168.1.100:5004/auto/v721
+#EXTINF:-1 tvg-id="I723.45266113.microsoft.com" tvg-logo="VSHD.png" tvg-name="723 VSHD" group-title="Comcast Cable",NBCSN HD (723 VSHD)
+http://192.168.1.100:5004/auto/v723
+#EXTINF:-1 tvg-id="I724.28460163.microsoft.com" tvg-logo="ESPNHD.png" tvg-name="724 ESPNHD" group-title="Comcast Cable",ESPNHD (724 ESPNHD)
+http://192.168.1.100:5004/auto/v724
+#EXTINF:-1 tvg-id="I725.41135550.microsoft.com" tvg-logo="ESPN2HD.png" tvg-name="725 ESPN2HD" group-title="Comcast Cable",ESPN2 HD (725 ESPN2HD)
+http://192.168.1.100:5004/auto/v725
+#EXTINF:-1 tvg-id="I731.291917157.microsoft.com" tvg-logo="FS1HD.png" tvg-name="731 FS1HD" group-title="Comcast Cable",Fox Sports 1 HD (731 FS1HD)
+http://192.168.1.100:5004/auto/v731
+#EXTINF:-1 tvg-id="I733.267489595.microsoft.com" tvg-logo="BRAVOHP.png" tvg-name="733 BRAVOHP" group-title="Comcast Cable",Bravo HD (Pacific) (733 BRAVOHP)
+http://192.168.1.100:5004/auto/v733
+#EXTINF:-1 tvg-id="I734.182930639.microsoft.com" tvg-logo="AETVHDP.png" tvg-name="734 AETVHDP" group-title="Comcast Cable",A&E Network HD (Pacific) (734 AETVHDP)
+http://192.168.1.100:5004/auto/v734
+#EXTINF:-1 tvg-id="I735.235948379.microsoft.com" tvg-logo="TBSHDP.png" tvg-name="735 TBSHDP" group-title="Comcast Cable",TBS HD (Pacific) (735 TBSHDP)
+http://192.168.1.100:5004/auto/v735
+#EXTINF:-1 tvg-id="I736.223894466.microsoft.com" tvg-logo="SYFYHDP.png" tvg-name="736 SYFYHDP" group-title="Comcast Cable",Syfy HD (Pacific) (736 SYFYHDP)
+http://192.168.1.100:5004/auto/v736
+#EXTINF:-1 tvg-id="I737.218977800.microsoft.com" tvg-logo="TNTPHD.png" tvg-name="737 TNTPHD" group-title="Comcast Cable",Turner Network TV HD (Pacific) (737 TNTPHD)
+http://192.168.1.100:5004/auto/v737
+#EXTINF:-1 tvg-id="I738.267761646.microsoft.com" tvg-logo="USAHDP.png" tvg-name="738 USAHDP" group-title="Comcast Cable",USA Network HD (Pacific) (738 USAHDP)
+http://192.168.1.100:5004/auto/v738
+#EXTINF:-1 tvg-id="I739.28459829.microsoft.com" tvg-logo="UHD.png" tvg-name="739 UHD" group-title="Comcast Cable",Universal HD (739 UHD)
+http://192.168.1.100:5004/auto/v739
+#EXTINF:-1 tvg-id="I741.188913961.microsoft.com" tvg-logo="FXPHD.png" tvg-name="741 FXPHD" group-title="Comcast Cable",FX HD (Pacific) (741 FXPHD)
+http://192.168.1.100:5004/auto/v741
+#EXTINF:-1 tvg-id="I742.200111751.microsoft.com" tvg-logo="ESQHD.png" tvg-name="742 ESQHD" group-title="Comcast Cable",Esquire HD (742 ESQHD)
+http://192.168.1.100:5004/auto/v742
+#EXTINF:-1 tvg-id="I743.219463676.microsoft.com" tvg-logo="SPIKPHD.png" tvg-name="743 SPIKPHD" group-title="Comcast Cable",Spike TV HD (Pacific) (743 SPIKPHD)
+http://192.168.1.100:5004/auto/v743
+#EXTINF:-1 tvg-id="I745.219463674.microsoft.com" tvg-logo="CCHDP.png" tvg-name="745 CCHDP" group-title="Comcast Cable",Comedy Central HD (Pacific) (745 CCHDP)
+http://192.168.1.100:5004/auto/v745
+#EXTINF:-1 tvg-id="I746.298397129.microsoft.com" tvg-logo="HGTVPHD.png" tvg-name="746 HGTVPHD" group-title="Comcast Cable",Home & Garden Television HD (Pacific) (746 HGTVPHD)
+http://192.168.1.100:5004/auto/v746
+#EXTINF:-1 tvg-id="I747.292341960.microsoft.com" tvg-logo="FOODPHD.png" tvg-name="747 FOODPHD" group-title="Comcast Cable",Food Network HD (Pacific) (747 FOODPHD)
+http://192.168.1.100:5004/auto/v747
+#EXTINF:-1 tvg-id="I749.199680572.microsoft.com" tvg-logo="GOLFHD.png" tvg-name="749 GOLFHD" group-title="Comcast Cable",The Golf Channel HD (749 GOLFHD)
+http://192.168.1.100:5004/auto/v749
+#EXTINF:-1 tvg-id="I750.287792389.microsoft.com" tvg-logo="DSCHDP.png" tvg-name="750 DSCHDP" group-title="Comcast Cable",The Discovery Channel (Pacific) HD (750 DSCHDP)
+http://192.168.1.100:5004/auto/v750
+#EXTINF:-1 tvg-id="I751.242548222.microsoft.com" tvg-logo="APLHDP.png" tvg-name="751 APLHDP" group-title="Comcast Cable",Animal Planet HD (Pacific) (751 APLHDP)
+http://192.168.1.100:5004/auto/v751
+#EXTINF:-1 tvg-id="I752.287707186.microsoft.com" tvg-logo="TLCPHD.png" tvg-name="752 TLCPHD" group-title="Comcast Cable",The Learning Channel HD (Pacific) (752 TLCPHD)
+http://192.168.1.100:5004/auto/v752
+#EXTINF:-1 tvg-id="I753.199647888.microsoft.com" tvg-logo="EHD.png" tvg-name="753 EHD" group-title="Comcast Cable",E! Entertainment Television HD (753 EHD)
+http://192.168.1.100:5004/auto/v753
+#EXTINF:-1 tvg-id="I754.28461123.microsoft.com" tvg-logo="HDT.png" tvg-name="754 HDT" group-title="Comcast Cable",Velocity (754 HDT)
+http://192.168.1.100:5004/auto/v754
+#EXTINF:-1 tvg-id="I755.183414974.microsoft.com" tvg-logo="TRAVHD.png" tvg-name="755 TRAVHD" group-title="Comcast Cable",The Travel Channel HD (755 TRAVHD)
+http://192.168.1.100:5004/auto/v755
+#EXTINF:-1 tvg-id="I757.258736853.microsoft.com" tvg-logo="NGCPHD.png" tvg-name="757 NGCPHD" group-title="Comcast Cable",National Geographic Channel HD (Pacific) (757 NGCPHD)
+http://192.168.1.100:5004/auto/v757
+#EXTINF:-1 tvg-id="I758.300193058.microsoft.com" tvg-logo="HSTRYHP.png" tvg-name="758 HSTRYHP" group-title="Comcast Cable",History HD (Pacific) (758 HSTRYHP)
+http://192.168.1.100:5004/auto/v758
+#EXTINF:-1 tvg-id="I759.181367759.microsoft.com" tvg-logo="CNNHD.png" tvg-name="759 CNNHD" group-title="Comcast Cable",CNN HD (759 CNNHD)
+http://192.168.1.100:5004/auto/v759
+#EXTINF:-1 tvg-id="I760.189993291.microsoft.com" tvg-logo="FNCHD.png" tvg-name="760 FNCHD" group-title="Comcast Cable",Fox News Channel HD (760 FNCHD)
+http://192.168.1.100:5004/auto/v760
+#EXTINF:-1 tvg-id="I761.182817099.microsoft.com" tvg-logo="FBNHD.png" tvg-name="761 FBNHD" group-title="Comcast Cable",Fox Business HD (761 FBNHD)
+http://192.168.1.100:5004/auto/v761
+#EXTINF:-1 tvg-id="I762.182862995.microsoft.com" tvg-logo="CNBCHD.png" tvg-name="762 CNBCHD" group-title="Comcast Cable",CNBC HD (762 CNBCHD)
+http://192.168.1.100:5004/auto/v762
+#EXTINF:-1 tvg-id="I763.258428403.microsoft.com" tvg-logo="BLOOMHD.png" tvg-name="763 BLOOMHD" group-title="Comcast Cable",Bloomberg HD (763 BLOOMHD)
+http://192.168.1.100:5004/auto/v763
+#EXTINF:-1 tvg-id="I766.234987247.microsoft.com" tvg-logo="TOONPHD.png" tvg-name="766 TOONPHD" group-title="Comcast Cable",Cartoon Network HD (Pacific) (766 TOONPHD)
+http://192.168.1.100:5004/auto/v766
+#EXTINF:-1 tvg-id="I767.219463677.microsoft.com" tvg-logo="NIKPHD.png" tvg-name="767 NIKPHD" group-title="Comcast Cable",Nickelodeon HD (Pacific) (767 NIKPHD)
+http://192.168.1.100:5004/auto/v767
+#EXTINF:-1 tvg-id="I768.211217915.microsoft.com" tvg-logo="ABCFHDP.png" tvg-name="768 ABCFHDP" group-title="Comcast Cable",ABC Family HD (Pacific) (768 ABCFHDP)
+http://192.168.1.100:5004/auto/v768
+#EXTINF:-1 tvg-id="I769.211217914.microsoft.com" tvg-logo="DISNHDP.png" tvg-name="769 DISNHDP" group-title="Comcast Cable",Disney Channel HD (Pacific) (769 DISNHDP)
+http://192.168.1.100:5004/auto/v769
+#EXTINF:-1 tvg-id="I770.250737810.microsoft.com" tvg-logo="SPROUTH.png" tvg-name="770 SPROUTH" group-title="Comcast Cable",PBS Kids Sprout HD (770 SPROUTH)
+http://192.168.1.100:5004/auto/v770
+#EXTINF:-1 tvg-id="I772.183145425.microsoft.com" tvg-logo="BIOHD.png" tvg-name="772 BIOHD" group-title="Comcast Cable",FYI Channel HD (772 BIOHD)
+http://192.168.1.100:5004/auto/v772
+#EXTINF:-1 tvg-id="I773.268082458.microsoft.com" tvg-logo="OXYGNHP.png" tvg-name="773 OXYGNHP" group-title="Comcast Cable",Oxygen HD (Pacific) (773 OXYGNHP)
+http://192.168.1.100:5004/auto/v773
+#EXTINF:-1 tvg-id="I774.219537223.microsoft.com" tvg-logo="HLNHD.png" tvg-name="774 HLNHD" group-title="Comcast Cable",HLN HD (774 HLNHD)
+http://192.168.1.100:5004/auto/v774
+#EXTINF:-1 tvg-id="I775.183392074.microsoft.com" tvg-logo="WGNHD.png" tvg-name="775 WGNHD" group-title="Comcast Cable",WGN America HD (775 WGNHD)
+http://192.168.1.100:5004/auto/v775
+#EXTINF:-1 tvg-id="I776.182937472.microsoft.com" tvg-logo="TWCHD.png" tvg-name="776 TWCHD" group-title="Comcast Cable",The Weather Channel HD (776 TWCHD)
+http://192.168.1.100:5004/auto/v776
+#EXTINF:-1 tvg-id="I777.219750755.microsoft.com" tvg-logo="BETHDP.png" tvg-name="777 BETHDP" group-title="Comcast Cable",BET HD (Pacific) (777 BETHDP)
+http://192.168.1.100:5004/auto/v777
+#EXTINF:-1 tvg-id="I778.219523062.microsoft.com" tvg-logo="CMTVHDP.png" tvg-name="778 CMTVHDP" group-title="Comcast Cable",Country Music Television HD Pacifc (778 CMTVHDP)
+http://192.168.1.100:5004/auto/v778
+#EXTINF:-1 tvg-id="I780.297291352.microsoft.com" tvg-logo="CSNCA2H.png" tvg-name="780 CSNCA2H" group-title="Comcast Cable",Comcast SportsNet California No Kings Al (780 CSNCA2H)
+http://192.168.1.100:5004/auto/v780
+#EXTINF:-1 tvg-id="I781.219537225.microsoft.com" tvg-logo="VH1PHD.png" tvg-name="781 VH1PHD" group-title="Comcast Cable",VH1 HD (Pacific) (781 VH1PHD)
+http://192.168.1.100:5004/auto/v781
+#EXTINF:-1 tvg-id="I782.219537226.microsoft.com" tvg-logo="MTVPHD.png" tvg-name="782 MTVPHD" group-title="Comcast Cable",MTV  Music Television HD (Pacific) (782 MTVPHD)
+http://192.168.1.100:5004/auto/v782
+#EXTINF:-1 tvg-id="I783.45417679.microsoft.com" tvg-logo="PLDHD.png" tvg-name="783 PLDHD" group-title="Comcast Cable",PALLADIA (783 PLDHD)
+http://192.168.1.100:5004/auto/v783
+#EXTINF:-1 tvg-id="I787.218995791.microsoft.com" tvg-logo="MNBCHD.png" tvg-name="787 MNBCHD" group-title="Comcast Cable",MSNBC HD (787 MNBCHD)
+http://192.168.1.100:5004/auto/v787
+#EXTINF:-1 tvg-id="I791.183404361.microsoft.com" tvg-logo="WEHD.png" tvg-name="791 WEHD" group-title="Comcast Cable",WE tv HD (791 WEHD)
+http://192.168.1.100:5004/auto/v791
+#EXTINF:-1 tvg-id="I793.229433515.microsoft.com" tvg-logo="HALLHD.png" tvg-name="793 HALLHD" group-title="Comcast Cable",Hallmark Channel HD (793 HALLHD)
+http://192.168.1.100:5004/auto/v793
+#EXTINF:-1 tvg-id="I794.42874364.microsoft.com" tvg-logo="HMHD.png" tvg-name="794 HMHD" group-title="Comcast Cable",Hallmark Movies & Mysteries HD (794 HMHD)
+http://192.168.1.100:5004/auto/v794
+#EXTINF:-1 tvg-id="I795.192881323.microsoft.com" tvg-logo="LIFEPHD.png" tvg-name="795 LIFEPHD" group-title="Comcast Cable",Lifetime HD (Pacific) (795 LIFEPHD)
+http://192.168.1.100:5004/auto/v795
+#EXTINF:-1 tvg-id="I796.169636232.microsoft.com" tvg-logo="LMNHD.png" tvg-name="796 LMNHD" group-title="Comcast Cable",Lifetime Movie Network HD (796 LMNHD)
+http://192.168.1.100:5004/auto/v796
+#EXTINF:-1 tvg-id="I798.285307340.microsoft.com" tvg-logo="AMCPHD.png" tvg-name="798 AMCPHD" group-title="Comcast Cable",AMC HD (Pacific) (798 AMCPHD)
+http://192.168.1.100:5004/auto/v798
+#EXTINF:-1 tvg-id="I811.200120283.microsoft.com" tvg-logo="HSNHD.png" tvg-name="811 HSNHD" group-title="Comcast Cable",HSN HD (811 HSNHD)
+http://192.168.1.100:5004/auto/v811
+#EXTINF:-1 tvg-id="I822.302821407.microsoft.com" tvg-logo="GSNPHD.png" tvg-name="822 GSNPHD" group-title="Comcast Cable",GSN HD (Pacific) (822 GSNPHD)
+http://192.168.1.100:5004/auto/v822
+#EXTINF:-1 tvg-id="I823.278895652.microsoft.com" tvg-logo="P12BAHD.png" tvg-name="823 P12BAHD" group-title="Comcast Cable",Pac12 Bay Area HD (823 P12BAHD)
+http://192.168.1.100:5004/auto/v823
+
+
+
+
+#EXTINF:900 group-title="Comcast Cable", HBO
+rtmp://rtmp.zerocast.tv:1935/live playpath=qKmzUdRhBM73njBBDFyL swfUrl=http://p.jwpcdn.com/6/10/jwplayer.flash.swf live=1 flashver=WIN\202012,0,0,77 timeout=15 token=8964316ec8772dfa live=1swfVfy=1 pageUrl=http://zerocast.tv
+
+
+
