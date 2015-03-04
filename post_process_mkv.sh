@@ -1,44 +1,44 @@
 #!/opt/bin/bash
 
+processing_in_path="/data/dvr/processing_in/"
+
 full_path=$1
 base_name=$2
+base_name_root=`echo $base_name | sed 's/.mkv//'`
 base_name_mpeg=`echo $base_name | sed 's/.mkv/.mpeg/'`
 base_name_mp4=`echo $base_name | sed 's/.mkv/.mp4/'`
+base_name_nfo=`echo $base_name | sed 's/.mkv/.nfo/'`
+base_path="/data/dvr"
 channel=$3
 title=$4
 description=$5
 dest_path=`echo "/data/TV/$title"`
 log_file="/data/bin/post_process_error.log"
-exec > $log_file 2>&1
+today_date=`date +%Y-%m-%d`
 
 
-if [ ! -d "$dest_path" ]; then
-mkdir "$dest_path"
-cat > "$dest_path"/tvshow.nfo <<EOL
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<tvshow>
-    <title>$title</title>
-    <showtitle>$title</showtitle>
-</tvshow>
-EOL
-fi
 
-echo $full_path >> /data/bin/post_process.log
-echo $base_name >> /data/bin/post_process.log
-echo $base_name_mpeg  >> /data/bin/post_process.log
-echo $channel >> /data/bin/post_process.log
-echo $title >> /data/bin/post_process.log
-echo $description >> /data/bin/post_process.log
-echo $dest_path >> /data/bin/post_process.log
+current_minute_code=`date +%M`
+current_minute_plus_five=`expr $current_minute_code + 5`
+minute_offset=`expr $current_minute_code % 30`
+minute_final=`expr $current_minute_code - $minute_offset`00
+current_datecode=`date +%Y%m%d%H`$minute_final
 
-##http://blown-to-bits.blogspot.com/2011/07/synology-dnla-transcoding-alternative.html
-###
+##current_datecode="20150303220000"
+xmlval=`/opt/bin/xmllint --xpath "(//programme[@stop[contains(.,'$current_datecode')] and title='$title'])[1]" /data/dvr/epg/tv/xmltv.xml | /usr/bin/tr '\n' ' '`
+xml_description=`echo $xmlval | xmllint --xpath "/programme/sub-title" - |  sed '/^\/ >/d' | sed 's/<[^>]*.//g'` 2> /dev/null
 
-/opt/bin/sudo /volume1/@appstore/VideoStation/bin/ffmpeg -y -prefer_smd \
-	-i "$full_path" -threads 0 -c:v h264_smd -vprofile high \
-	-s hd720 -bf 0 -b:v 2500k -c:a copy "$dest_path/$base_name_mpeg" \
-	&& /opt/bin/sudo /volume1/@appstore/VideoStation/bin/ffmpeg -y \
-	-i "$dest_path/$base_name_mpeg" -c:v copy -c:a copy -f mp4 "$dest_path/$base_name_mp4" \
-	&& rm -rf "$full_path" "$dest_path/$base_name_mpeg"
 
-###  -vsync 2
+echo "full_path=$full_path" > "$processing_in_path"/"$base_name_root".dvr
+echo "base_name=$base_name" >> "$processing_in_path"/"$base_name_root".dvr
+echo "base_name_root=$base_name_root" >> "$processing_in_path"/"$base_name_root".dvr
+echo "current_datecode=$current_datecode" >> "$processing_in_path"/"$base_name_root".dvr
+echo "channel=$channel" >> "$processing_in_path"/"$base_name_root".dvr
+echo "title=$title" >> "$processing_in_path"/"$base_name_root".dvr
+echo "description=$description" >> "$processing_in_path"/"$base_name_root".dvr
+echo "xml_description=$xml_description" >> "$processing_in_path"/"$base_name_root".dvr
+echo "xmltv_raw=$xmlval" >> "$processing_in_path"/"$base_name_root".dvr
+
+exit 0
+
+
