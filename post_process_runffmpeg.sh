@@ -9,18 +9,25 @@ base_path="/data/dvr"
 
 exec >> /data/bin/log_postproc-ffmpeg.log 2>&1
 if [ "$(ls -A $processing_current_path)" ]; then
-	echo "already processing a file"
+	echo "already processing a file" >> /data/bin/log_postproc-info.log
+	exit 0
+fi
+
+if [[ ! $(ls -A $processing_in_path) ]]; then 
+	#echo "no files to process"
 	exit 0
 fi
 
 for f in $processing_in_path*
 do
-	echo "Processing $f"
+	echo `date` >> /data/bin/log_postproc-info.log
+	echo "Processing $f" >> /data/bin/log_postproc-info.log
 	IFS="="
 	while read -r var value
 	do
 		declare "$var"="${value//\"/}"
 	done < "$f"
+	unset IFS
 	#$full_path
 	#$base_name
 	#$base_name_root
@@ -29,16 +36,21 @@ do
 	#$title
 	#$description
 	#$xml_description
-	echo $full_path
+	echo $full_path >> /data/bin/log_postproc-info.log
+	#base_name_root="$base_name_root".$RANDOM
 	base_name_mpeg="$base_name_root".mpeg
 	base_name_mp4="$base_name_root".mp4
 	base_name_nfo="$base_name_root".nfo
 	dest_path=$dest_folder$title
-	mv $f "$processing_current_path""$base_name_root"".dvr"
-
+	mv "$f" "$processing_current_path$base_name_root.dvr"
+	if [[ -z "$full_path" ]]; then
+		echo "Could not read metadata for file $f" >> /data/bin/log_postproc-info.log
+		continue
+	fi
 
 	### process
 if [ ! -d "$dest_path" ]; then
+	echo "creating dir $dest_path and adding NFO" >> /data/bin/log_postproc-info.log
 mkdir "$dest_path"
 cat > "$dest_path"/tvshow.nfo <<EOL
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
@@ -48,13 +60,14 @@ cat > "$dest_path"/tvshow.nfo <<EOL
 </tvshow>
 EOL
 fi
+	echo "running ffmpeg on $full_path" >> /data/bin/log_postproc-info.log
 	/opt/bin/sudo /volume1/@appstore/VideoStation/bin/ffmpeg -y -prefer_smd \
 	-i "$full_path" -threads 0 -c:v h264_smd -vprofile high \
 	-s hd720 -bf 0 -b:v 2500k -c:a copy "$base_path/$base_name_mpeg" \
 	&& /opt/bin/sudo /volume1/@appstore/VideoStation/bin/ffmpeg -y \
 	-i "$base_path/$base_name_mpeg" -c:v copy -c:a copy -f mp4 "$dest_path/$base_name_mp4" \
 	&& rm -rf "$full_path" "$base_path/$base_name_mpeg" \
-	&& mv "$processing_current_path""$base_name_root"".dvr" "$processing_done_path""$base_name_root"".dvr"
+	&& mv "$processing_current_path$base_name_root.dvr" "$processing_done_path$base_name_root.dvr"
 
 cat > "$dest_path"/"$base_name_nfo" <<EOL
 <episodedetails>

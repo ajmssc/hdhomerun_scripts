@@ -4,10 +4,7 @@ processing_in_path="/data/dvr/processing_in/"
 
 full_path=$1
 base_name=$2
-base_name_root=`echo $base_name | sed 's/.mkv//'`
-base_name_mpeg=`echo $base_name | sed 's/.mkv/.mpeg/'`
-base_name_mp4=`echo $base_name | sed 's/.mkv/.mp4/'`
-base_name_nfo=`echo $base_name | sed 's/.mkv/.nfo/'`
+base_name_root=`echo $base_name | sed 's/.mkv//'`.$RANDOM
 base_path="/data/dvr"
 channel=$3
 title=$4
@@ -22,11 +19,14 @@ current_minute_code=`date +%M`
 current_minute_plus_five=`expr $current_minute_code + 5`
 minute_offset=`expr $current_minute_code % 30`
 minute_final=`expr $current_minute_code - $minute_offset`00
-current_datecode=`date +%Y%m%d%H`$minute_final
+current_datecode=`date +%Y%m%d%H`
 
 ##current_datecode="20150303220000"
-xmlval=`/opt/bin/xmllint --xpath "(//programme[@stop[contains(.,'$current_datecode')] and title='$title'])[1]" /data/dvr/epg/tv/xmltv.xml | /usr/bin/tr '\n' ' '`
-xml_description=`echo $xmlval | xmllint --xpath "/programme/sub-title" - |  sed '/^\/ >/d' | sed 's/<[^>]*.//g'` 2> /dev/null
+/opt/bin/xmllint --xpath "(//programme[@stop[contains(.,'$current_datecode')] and title='$title'])[1]" /data/dvr/epg/tv/xmltv.xml | /usr/bin/tr '\r\n' ' ' > "/tmp/$base_name_root.xml"
+read xmlval < "/tmp/$base_name_root.xml"
+xml_description=`/opt/bin/xmllint --xpath "/programme/sub-title" "/tmp/$base_name_root.xml" | /bin/sed '/^\/ >/d' | /bin/sed 's/<[^>]*.//g'`
+#xmlval=`/opt/bin/xmllint --xpath "(//programme[@stop[contains(.,'$current_datecode')] and title='$title'])[1]" /data/dvr/epg/tv/xmltv.xml | /usr/bin/tr '\n' ' '`
+#xml_description=`echo $xmlval | xmllint --xpath "/programme/sub-title" - |  sed '/^\/ >/d' | sed 's/<[^>]*.//g'` 2> /dev/null
 
 
 echo "full_path=$full_path" > "$processing_in_path"/"$base_name_root".dvr
